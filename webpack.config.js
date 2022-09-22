@@ -3,8 +3,8 @@ const singleSpaDefaults = require('webpack-config-single-spa-react-ts');
 
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
-    orgName: 'project',
-    projectName: 'micro-frontend-name',
+    orgName: 'snapify',
+    projectName: 'mf-user',
     webpackConfigEnv,
     argv,
   });
