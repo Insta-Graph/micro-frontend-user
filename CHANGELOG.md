@@ -1,3 +1,10 @@
+# 1.0.0 (2022-09-22)
+
+
+### Features
+
+* protect main component using AuthProvider ([398743f](https://github.com/Insta-Graph/micro-frontend-user/commit/398743ffe8cab444bbd67a2a27a433b09cd576b3))
+
 # [1.3.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.2.0...v1.3.0) (2022-09-07)
 
 
