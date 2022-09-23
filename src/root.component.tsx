@@ -1,33 +1,37 @@
-import { UserNavbar, AuthProvider, ThemeProvider } from '@snapify/shared-modules';
+import {
+  UserLayout,
+  AuthProvider,
+  ThemeProvider,
+  apolloClient,
+  ApolloProvider,
+  authService,
+} from '@snapify/shared-modules';
 
 const Root: React.FC<{ name: string }> = ({ name }) => {
+  const user = authService.getUser();
   return (
-    <ThemeProvider>
-      <AuthProvider>
-        <UserNavbar>
-          <section>
-            <div className="jumbotron">
-              <h1 className="display-4">{name} is mounted!</h1>
-              <p className="lead">
-                This is a simple hero unit, a simple jumbotron-style component for calling extra
-                attention to featured content or information.
-              </p>
-              <hr className="my-4" />
-              <p>
-                It uses utility classNames for typography and spacing to space content out within
-                the larger container.
-              </p>
-              <p className="lead">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="btn btn-primary btn-lg" href="#" role="button">
-                  Learn more
-                </a>
-              </p>
-            </div>
-          </section>
-        </UserNavbar>
-      </AuthProvider>
-    </ThemeProvider>
+    <ApolloProvider client={apolloClient}>
+      <ThemeProvider>
+        <AuthProvider>
+          <UserLayout>
+            <section>
+              <div className="jumbotron">
+                <h1 className="display-4">{name} is mounted!</h1>
+                <p className="lead">{user.firstName}</p>
+                <hr className="my-4" />
+                <p>{user.lastName}</p>
+                <p className="lead">
+                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                  <a className="btn btn-primary btn-lg" href="#" role="button">
+                    Id: {user._id}
+                  </a>
+                </p>
+              </div>
+            </section>
+          </UserLayout>
+        </AuthProvider>
+      </ThemeProvider>
+    </ApolloProvider>
   );
 };
 
