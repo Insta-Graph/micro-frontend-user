@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.1.0...v1.1.1) (2022-09-23)
+
+
+### Bug Fixes
+
+* protect route and show user data ([0c4a83d](https://github.com/Insta-Graph/micro-frontend-user/commit/0c4a83de0bbf8a3a6d9c791c639bf1fe1843c5d9))
+
 # [1.1.0](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.0.0...v1.1.0) (2022-09-23)
 
 
