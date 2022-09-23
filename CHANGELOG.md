@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.0.0...v1.1.0) (2022-09-23)
+
+
+### Features
+
+* render navbar at user routes ([fc49ad9](https://github.com/Insta-Graph/micro-frontend-user/commit/fc49ad9b3a2b8e10a0de095f3810e94d8dec9e9a))
+
 # 1.0.0 (2022-09-22)
 
 
