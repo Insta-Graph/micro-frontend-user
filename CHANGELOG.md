@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.1.2...v1.1.3) (2022-09-24)
+
+
+### Bug Fixes
+
+* wrap everything in auth provider to avoid authorization header error ([e10286b](https://github.com/Insta-Graph/micro-frontend-user/commit/e10286bc4a52723999e4ece554b54cb921212422))
+
 ## [1.1.2](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.1.1...v1.1.2) (2022-09-24)
 
 
