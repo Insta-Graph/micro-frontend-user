@@ -2,7 +2,7 @@ import {
   UserLayout,
   AuthProvider,
   ThemeProvider,
-  apolloClient,
+  getApolloClient,
   ApolloProvider,
   authService,
 } from '@snapify/shared-modules';
@@ -10,7 +10,7 @@ import {
 const Root: React.FC<{ name: string }> = ({ name }) => {
   const user = authService.getUser();
   return (
-    <ApolloProvider client={apolloClient}>
+    <ApolloProvider client={getApolloClient()}>
       <ThemeProvider>
         <AuthProvider>
           <UserLayout>
