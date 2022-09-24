@@ -2,7 +2,6 @@ import {
   UserLayout,
   AuthProvider,
   ThemeProvider,
-  getApolloClient,
   ApolloProvider,
   authService,
 } from '@snapify/shared-modules';
@@ -10,9 +9,9 @@ import {
 const Root: React.FC<{ name: string }> = ({ name }) => {
   const user = authService.getUser();
   return (
-    <ApolloProvider client={getApolloClient()}>
-      <ThemeProvider>
-        <AuthProvider>
+    <AuthProvider>
+      <ApolloProvider>
+        <ThemeProvider>
           <UserLayout>
             <section>
               <div className="jumbotron">
@@ -29,9 +28,9 @@ const Root: React.FC<{ name: string }> = ({ name }) => {
               </div>
             </section>
           </UserLayout>
-        </AuthProvider>
-      </ThemeProvider>
-    </ApolloProvider>
+        </ThemeProvider>
+      </ApolloProvider>
+    </AuthProvider>
   );
 };
 
