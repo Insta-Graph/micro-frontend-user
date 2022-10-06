@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.1.3...v1.1.4) (2022-10-06)
+
+
+### Bug Fixes
+
+* assume a role to deploy changes ([e7ab86b](https://github.com/Insta-Graph/micro-frontend-user/commit/e7ab86b18bd867d0a2f25a87d4b01c2aaa308355))
+
 ## [1.1.3](https://github.com/Insta-Graph/micro-frontend-user/compare/v1.1.2...v1.1.3) (2022-09-24)
 
 
